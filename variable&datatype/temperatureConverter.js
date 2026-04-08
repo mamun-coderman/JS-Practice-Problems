@@ -12,10 +12,12 @@ If the input is in Fahrenheit (F), convert it to Celsius (C)
 function convertTemperature(input){
     const value = parseFloat(input);
     const unit = input.slice(-1).toUpperCase();
+    // celsius to fahrenheit
     if (unit === "C"){
         const fahrenheit = ( value * 9/5 ) + 32;
         return `${value}°C = ${fahrenheit}°F`;
     }
+    // fahrenheit to celsius
     else if ( unit === "F" ) {
         const celsius = ( fahrenheit - 32 ) * 5/9;
         return `${value}°F = ${celsius}`;
