@@ -5,17 +5,12 @@
 
 
 function checkingOddEven(inputNumber) {
-    if (inputNumber % 2 === 0) {
-        console.log("Even")
-    }
-    else {
-        console.log("Odd")
-    }
+    return inputNumber % 2 === 0 ? "Even" : "Odd"
 }
 
 const value = 11;
 
-checkingOddEven(value)
+console.log(checkingOddEven(value))
 
 
 
