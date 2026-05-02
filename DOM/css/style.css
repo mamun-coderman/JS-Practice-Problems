@@ -5,8 +5,33 @@ body{
     margin-left: 50px;
 }
 
+#first-section{
+    padding: 30px;
+    background-color: khaki;
+    border-radius: 20px;
+}
+
 #text-btn{
     border: 2px solid silver;
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+/* first section ends and second starts */
+
+#second-section{
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#num-btn{
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#count{
+    font-size: 40px;
 }
