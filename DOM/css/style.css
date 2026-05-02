@@ -1,1 +1,12 @@
 /* this is css file */
+
+body{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#text-btn{
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
