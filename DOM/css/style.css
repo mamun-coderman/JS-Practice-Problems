@@ -35,3 +35,25 @@ body{
 #count{
     font-size: 40px;
 }
+
+/* second section ends and third section starts */
+
+#third-section{
+    margin-top: 1.5rem;
+    padding: 2rem 8rem;
+    text-align: center;
+    background-color: darkseagreen;
+    border-radius: 1.25rem;
+}
+
+#hidden-text{
+    font-size: 1rem;
+    color: #fff;
+}
+
+#hide-btn{
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
