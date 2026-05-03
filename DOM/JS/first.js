@@ -32,7 +32,7 @@ numBtn.addEventListener("click", function(){
 
 // second section ends here and third starts
 
-const hiddenTxt = document.getElementById(hidden-text);
+const hiddenTxt = document.getElementById("hidden-text");
 const hiddenBtn = document.getElementById("hide-btn");
 hiddenBtn.addEventListener("click", function(){ 
     hiddenBtn.style.border = "1px solid orange"
