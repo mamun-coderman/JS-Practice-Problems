@@ -40,3 +40,11 @@ hiddenBtn.addEventListener("click", function(){
     hiddenBtn.style.color = "white"
     hiddenTxt.style.display = "none";
 })
+
+// third section ends and fourth starts here
+
+const inputText = document.getElementById("text-input");
+const output = document.getElementById("text-show");
+inputText.addEventListener("input", function(){ 
+    output.innerText = inputText.value;
+})
