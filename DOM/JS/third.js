@@ -1,1 +1,0 @@
-console.log("This one is from third js file")
