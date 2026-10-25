@@ -1,18 +1,47 @@
-// here are the raw Javascript code for movie name slider project.
+// Here is the JavaScript code for the movie name slider functionality. It cycles through a list of movies, displaying their names and posters, while also changing the text color.
 
-// movie names are stored in an array
-const movies = ["Titanic", "The Shawshank Redemption", "Life is Beautiful", "The Nodebook", "The Reader"];
-const colors = ["orange", "purple", "yellow"];
+
+const movies = [
+    {
+        name: "Titanic",
+        poster: "./images/titanic.jpg"
+    },
+    {
+        name: "The Shawshank Redemption",
+        poster: "./images/shawshank.jpg"
+    },
+    {
+        name: "Life is Beautiful",
+        poster: "./images/lifeIsbeautiful.jpg"
+    },
+    {
+        name: "The Notebook",
+        poster: "./images/the-notebook.jpg"
+    },
+    {
+        name: "The Reader",
+        poster: "./images/the-reader.jpg"
+    }];
+
+const colors = ["orange", "#f2f3c0", "yellow"];
+
 const movieElement = document.getElementById("movie-name");
+const posterElement = document.getElementById("movie-poster");
 
 let movieIndex = 0;
 let colorIndex = 0;
 
+function showMovie() {
+    movieElement.textContent = movies[movieIndex].name;
+    posterElement.src = movies[movieIndex].poster;
+    posterElement.alt = movies[movieIndex].name + " poster";
 
-movieElement.textContent = movies[movieIndex];
-setInterval(() => {
+    movieElement.style.color = colors[colorIndex];
+
     movieIndex = (movieIndex + 1) % movies.length;
     colorIndex = (colorIndex + 1) % colors.length;
-    movieElement.textContent = movies[movieIndex];
-    movieElement.style.color = colors[colorIndex];
-}, 2000);
+}
+
+showMovie();
+
+setInterval(showMovie, 4000);

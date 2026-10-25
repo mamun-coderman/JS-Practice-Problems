@@ -10,10 +10,24 @@
 
 </head>
 <body class="flex justify-center items-center h-screen">
-    <div class=" bg-blue-500 px-24 py-16 rounded-lg">
-        <h1 class="mb-4 text-xl font-semibold text-white">Some of my favorite movie names are here...</h1>
-        <h2 id="movie-name">loading....</h2>
+    
+    <div class="bg-blue-500 px-8 py-8 rounded-3xl ">
+        <h1 class="mb-6 text-xl font-semibold text-white">
+            Some of my favorite movie names are here...
+        </h1>
+
+        <div class="flex items-center gap-6 ">
+            <!-- Left side: Movie name -->
+            <div id="movie-name"
+                class="flex-1 text-xl font-bold text-white wrap-break-words ">
+                
+            </div>
+
+            <!-- Right side: Movie poster -->
+            <img id="movie-poster" src="" alt="" class="flex-1 w-44 h-60  shrink-0 object-cover rounded-xl">
+        </div>
     </div>
+
 
 
 
