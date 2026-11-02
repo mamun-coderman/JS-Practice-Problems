@@ -49,3 +49,21 @@ const output = document.getElementById("text-show");
 inputText.addEventListener("input", function(){ 
     output.innerText = inputText.value;
 })
+
+
+
+
+// API calling practice starts here
+const apiBtn = document.getElementById("api-btn");
+const apiData = document.getElementById("api-data");
+
+apiBtn.addEventListener("click", function(){ 
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => response.json())
+        .then(data => {
+            apiData.innerText = Object.entries(data).map(([key, value]) => `${key}: ${value}`).join('\n');       
+        })
+        .catch(error => {
+            console.error("Error fetching API data:", error);
+        });
+});
