@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Practice</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- tailwind css added -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
-        <section id="first-section">
-            <p id="btn-title">Hello, I am html</p>
-            <button id="text-btn">changeText</button>
+        <section id="first-section" class="bg-slate-400 h-[100vh] flex flex-col gap-4 justify-center items-center">
+            <p id="btn-title" class="text-xl">Hello, I am html</p>
+            <button id="text-btn" class="bg-blue-500 text-white px-4 py-2 rounded">changeText</button>
         </section>
 
         <!--first section ends and second section starts here  -->
 
-        <section id="second-section">
-            <p>Number will increase one by one per click of button.</p>
-            <h2 id="count">0</h2>
-            <button id="num-btn">Click Me</button>
+        <section id="second-section" class="bg-slate-600 h-[100vh] flex flex-col gap-4 justify-center items-center">
+            <p class="text-lg">Number will increase one by one per click of button.</p>
+            <h2 id="count" class="text-2xl font-bold">0</h2>
+            <button id="num-btn" class="bg-green-500 text-white px-4 py-2 rounded">Click Me</button>
 
         </section>
 
         <!-- second section ends and third starts here -->
 
-        <section id="third-section">
-            <div id="text-parent">
-                <p id="hidden-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, quibusdam aspernatur. Earum accusamus atque debitis laborum sapiente maxime ex quo?</p>
+        <section id="third-section" class="bg-slate-800 h-[100vh] flex flex-col gap-4 justify-center items-center">
+            <div id="text-parent" class="flex flex-col gap-4 justify-center items-center">
+                <p id="hidden-text" class="text-center text-lg text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, quibusdam aspernatur. Earum accusamus atque debitis laborum sapiente maxime ex quo?</p>
             </div>
-            <button id="hide-btn">Hide Text</button>
+            <button id="hide-btn" class="bg-red-500 text-white px-4 py-2 rounded">Hide Text</button>
         </section>
 
         <!-- third section ends here and fourth starts here -->
 
-        <section id="fourth-section">
-            <div id="text-show"></div>
-            <input type="text" placeholder="Type your message here... " name="" id="text-input">
+        <section id="fourth-section" class="bg-slate-900 h-[100vh] flex flex-col gap-4 justify-center items-center">
+            <div id="text-show" class="text-center text-lg text-white"></div>
+            <input type="text" placeholder="Type your message here... " name="" id="text-input" class="bg-slate-700 text-white placeholder:text-slate-500 p-2 border border-slate-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
         </section>
 
 

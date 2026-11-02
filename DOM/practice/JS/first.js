@@ -38,6 +38,7 @@ hiddenBtn.addEventListener("click", function(){
     hiddenBtn.style.border = "1px solid orange"
     hiddenBtn.style.backgroundColor = "orange"
     hiddenBtn.style.color = "white"
+    hiddenBtn.innerText = "Hidden"
     hiddenTxt.style.display = "none";
 })
 
