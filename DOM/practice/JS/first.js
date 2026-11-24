@@ -58,12 +58,14 @@ const apiBtn = document.getElementById("api-btn");
 const apiData = document.getElementById("api-data");
 
 apiBtn.addEventListener("click", function(){ 
-    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    const url = "https://jsonplaceholder.typicode.com/posts"; 
+    fetch(url)
         .then(response => response.json())
         .then(data => {
-            apiData.innerText = Object.entries(data).map(([key, value]) => `${key}: ${value}`).join('\n');       
+            apiData.innerHTML = `${JSON.stringify(data, null,2)}`;
         })
         .catch(error => {
             console.error("Error fetching API data:", error);
         });
-});
+})
+
